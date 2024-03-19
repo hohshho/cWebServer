@@ -1,0 +1,72 @@
+[
+  {
+    "key": "gen5",
+    "name": "ECHO Gen5",
+    "interface": [
+      "NVMe 2.0",
+      "PCIe 5.0x4",
+      "OCP 데이터센터 NVMe SSD 2.0",
+      "64가지 신체 기능 지원",
+      "유연한 데이터 배치(FDP)",
+      "ZNS 지원",
+      "SR-IOV(최대 63 VF 지원)"
+    ],
+    "Capacity": ["2TB", "4TB", "8TB", "16TB", "32TB"],
+    "Performance": {
+      "SeqRead": "14,000 MB/s",
+      "SeqWrite": "10,000 MB/s",
+      "RandomRead": "3,200 KIOPS",
+      "RandomWrite": ["OP7 400 KIOPS", "OP28 800 KIOPS"]
+    },
+    "Features": [
+      "Flexible Data Placement (FDP)",
+      "Multiple Namespaces (up to 512 NS)",
+      "SR-IOV",
+      "Multiple Sector Size Support",
+      "SMART / Health Log / Telemetry Log",
+      "Atomicity of 2MB",
+      "NVMe-MI 1.2/Vital Product Data(VPD) over SMBus and PCIe VDM",
+      "Power Loss Protection (PLP)"
+    ]
+  },
+  {
+    "key": "gen4",
+    "name": "DELTA Gen4",
+    "interface": ["NVMe 1.4b", "PCIe 4.0 x 4", "OCP NVMe Cloud SSD 1.0a"],
+    "Capacity": ["1TB", "2TB", "4TB", "8TB"],
+    "Performance": {
+      "SeqRead": "7,050 MB/s",
+      "SeqWrite": "4,200 MB/s",
+      "RandomRead": "1,350 KIOPS",
+      "RandomWrite": ["200 KIOPS"]
+    },
+    "Features": [
+      "Multiple Namespaces (128NS)",
+      "SMART / Health Log / Telemetry",
+      "Atomicity of 512KB",
+      "NVMe-MI 1.0a / Vital Product Data (VPD) over SMBus",
+      "Power Loss Protection (PLP)",
+      "Multiple Sector Size Support"
+    ]
+  },
+  {
+    "key": "gen3",
+    "name": "BRAVO Gen3",
+    "interface": ["NVMe 1.4", "PCIe 3.0 x 4", "OCP NVMe Cloud SSD 1.0"],
+    "Capacity": ["1TB", "2TB", "4TB"],
+    "Performance": {
+      "SeqRead": "3,400 MB/s",
+      "SeqWrite": "2,400 MB/s",
+      "RandomRead": "800 KIOPS",
+      "RandomWrite": ["95 KIOPS"]
+    },
+    "Features": [
+      "Multiple Namespaces (16NS)",
+      "SMART / Health Log / Telemetry",
+      "Atomicity of 512KB",
+      "NVMe-MI 1.0a",
+      "Power Loss Protection (PLP)",
+      "Multiple Sector Size Support"
+    ]
+  }
+]

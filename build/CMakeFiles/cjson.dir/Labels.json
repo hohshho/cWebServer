@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/CMakeFiles/cjson"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/CMakeFiles/cjson.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/CMakeFiles/cjson-complete.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-build.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-configure.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-download.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-install.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-mkdir.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-patch.rule"
+		},
+		{
+			"file" : "/Users/hansanghyeok/github/cWebServer/build/cjson/src/cjson-stamp/cjson-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cjson"
+		],
+		"name" : "cjson"
+	}
+}

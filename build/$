@@ -1,0 +1,22 @@
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+cmake_minimum_required(VERSION 3.5)
+
+file(MAKE_DIRECTORY
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src/googletest"
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src/googletest-build"
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}"
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/tmp"
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src/googletest-stamp"
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src"
+  "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src/googletest-stamp"
+)
+
+set(configSubDirs )
+foreach(subDir IN LISTS configSubDirs)
+    file(MAKE_DIRECTORY "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src/googletest-stamp/${subDir}")
+endforeach()
+if(cfgdir)
+  file(MAKE_DIRECTORY "/Users/hansanghyeok/github/cWebServer/build/$;{;CJSON_BUILD_DIR;}/src/googletest-stamp${cfgdir}") # cfgdir has leading slash
+endif()
