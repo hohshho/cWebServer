@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
+#include <signal.h>
 
 #include "common.h"
 #include "controller.h"
@@ -33,7 +34,7 @@ int main()
         perror("바인딩 실패");
         exit(EXIT_FAILURE);
     }
-    
+
     printf("bind() success \n");
 
     // 수신 대기열 10개 지정
@@ -47,9 +48,9 @@ int main()
 
     // 부모 프로세스에서 자식 프로세스 종료 무시
     signal(SIGCHLD, SIG_IGN);
-    
+
     printf("server start");
-    
+
     // 클라이언트 요청 대기 및 처리
     while (1)
     {
@@ -63,9 +64,10 @@ int main()
 
         // 멀티 프로세스
         pid = fork();
-        if(pid == 0) {
+        if (pid == 0)
+        {
             close(serverFd);
-            
+
             // URL 추출 및 처리
             char buffer[BUFFER_SIZE] = {0};
             read(clientSocket, buffer, BUFFER_SIZE);
@@ -85,9 +87,15 @@ int main()
             close(clientSocket);
             exit(0);
         }
-        
-        if(pid != 0) { close(clientSocket); }
-        if(pid < 0) { perror("error fork"); }
+
+        if (pid != 0)
+        {
+            close(clientSocket);
+        }
+        if (pid < 0)
+        {
+            perror("error fork");
+        }
     }
 
     return 0;
