@@ -17,7 +17,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 )
 
 # cJson 라이브러리 포함
-add_subdirectory(lib/cJSON)
+add_subdirectory(lib/cjson)
 target_link_libraries(${PROJECT_NAME} PRIVATE cjson)  # cJSON 라이브러리 링크
 
 # 각 하위 디렉토리의 CMakeLists.txt 파일 포함
