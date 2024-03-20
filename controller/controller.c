@@ -15,6 +15,7 @@ void handleRequest(char *url, int clientSocket)
         printf("main 호출\n");
     }
     else if (
+        strcmp(url, "/gen1") == 0 ||
         strcmp(url, "/gen3") == 0 ||
         strcmp(url, "/gen4") == 0 ||
         strcmp(url, "/gen5") == 0)
