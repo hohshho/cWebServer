@@ -14,7 +14,11 @@ void handleRequest(char *url, int clientSocket)
         render_template(clientSocket, "main.html");
         printf("main 호출\n");
     }
-    else if (strcmp(url, "/gen3") == 0 || strcmp(url, "/gen4") == 0 || strcmp(url, "/gen5") == 0)
+    else if (
+        strcmp(url, "/gen1") == 0 ||
+        strcmp(url, "/gen3") == 0 ||
+        strcmp(url, "/gen4") == 0 ||
+        strcmp(url, "/gen5") == 0)
     {
         // 서비스 코드
         printf("gen 상세 페이지 호출 시작\n");
